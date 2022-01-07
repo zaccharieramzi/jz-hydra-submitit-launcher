@@ -13,7 +13,7 @@ on:
 
 jobs:
   test:
-    name: Test Code
+    name: Test Install
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -21,10 +21,7 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: 3.8
-    - name: Install dependencies
+    - name: Install
       run: |
         python -m pip install --upgrade pip
-        pip install pytest
         pip install .
-    - name: Test with pytest
-      run: pytest -s my_package/tests
