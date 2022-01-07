@@ -1,0 +1,6 @@
+defaults:
+  - base
+
+qos: qos_gpu-t3
+additional_parameters:
+  time: "20:00:00"

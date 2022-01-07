@@ -1,0 +1,5 @@
+defaults:
+  - t4
+
+cpus_per_task: 40
+gpus_per_node: 4
