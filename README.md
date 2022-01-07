@@ -7,7 +7,7 @@ Basically it extends the submitit-launcher plugin with defaults that make sense 
 
 ## Install
 
-This package can be installed via pip:
+This package can be installed from pypi:
 ```
 pip install jz-hydra-submitit-launcher
 ```
