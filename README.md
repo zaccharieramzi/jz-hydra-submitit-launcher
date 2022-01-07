@@ -20,3 +20,18 @@ pip install .
 ```
 
 ## Use
+
+The primary use is with the `hydra-submitit-launch` command with your script name and the config type:
+```
+hydra-submitit-launch my_app.py dev
+```
+
+## Available configs
+
+## Advanced use
+
+
+## References
+- Hydra: https://hydra.cc/docs/intro/
+- submitit-launcher: https://hydra.cc/docs/plugins/submitit_launcher/
+- submitit: https://github.com/facebookincubator/submitit
