@@ -31,4 +31,5 @@ setuptools.setup(
     python_requires='>=3.6',
     include_package_data=True,
     keywords=['hydra', 'submitit', 'jean-zay'],
+    scripts=['jz_hydra_submitit_launcher/bin/hydra-submitit-launch'],
 )
