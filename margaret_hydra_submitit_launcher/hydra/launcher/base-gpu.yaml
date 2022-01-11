@@ -1,0 +1,8 @@
+defaults:
+  - base
+
+partition: gpu
+gpus_per_node: 1
+gres: "gpu:${hydra.launcher.gpus_per_node}"
+cpus_per_gpu: 10
+gpus_per_task: ${hydra.launcher.gpus_per_node}

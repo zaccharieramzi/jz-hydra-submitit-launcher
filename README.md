@@ -1,4 +1,4 @@
-# JZ-hydra-submitit-launcher
+# Margaret-hydra-submitit-launcher
 
 ![GitHub Workflow Build Status](https://github.com/raphaelmeudec/margaret-hydra-submitit-launcher/workflows/Continuous%20testing/badge.svg)
 
@@ -36,6 +36,7 @@ hydra-submitit-launch my_app.py dev
 - `4gpus_t4`: with 100 hours, 4 gpus, and qos_gpu-t4.
 
 By default, all the configs select 32Gb GPUs, use a single node and use the gpu_p1 partition.
+
 ### Advanced configs
 You can override the SLURM config, the same way you would with any hydra configuration.
 The parameters you can override are defined in the `hydra-submitit-launcher` plugin [doc](https://hydra.cc/docs/plugins/submitit_launcher/#usage).
@@ -44,7 +45,6 @@ For example, if you want to use the gpu_p2 partition, you would need to do:
 ```
 hydra-submitit-launch my_app.py dev hydra.launcher.setup=null hydra.launcher.partition=gpu_p2
 ```
-
 
 ## References
 - Hydra: https://hydra.cc/docs/intro/

@@ -1,0 +1,4 @@
+defaults:
+  - base-cpu
+
+cpus_per_task: 100

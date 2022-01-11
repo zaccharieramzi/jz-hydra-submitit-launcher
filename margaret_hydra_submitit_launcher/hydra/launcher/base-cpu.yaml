@@ -1,0 +1,5 @@
+defaults:
+  - base
+
+partition: parietal,normal
+cpus_per_task: 5
