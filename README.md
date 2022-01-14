@@ -2,21 +2,21 @@
 
 ![GitHub Workflow Build Status](https://github.com/zaccharieramzi/jz-hydra-submitit-launcher/workflows/Continuous%20testing/badge.svg)
 
-A Jean Zay tailored Hydra submitit launcher based on [Hydra](https://hydra.cc/docs/intro/) and its [submitit-launcher plugin](https://hydra.cc/docs/plugins/submitit_launcher/).
-Basically it extends the submitit-launcher plugin with defaults that make sense for Jean Zay.
+A Jean Zay (JZ) tailored Hydra submitit launcher based on [Hydra](https://hydra.cc/docs/intro/) and its [submitit-launcher plugin](https://hydra.cc/docs/plugins/submitit_launcher/).
+Basically it extends the submitit-launcher plugin with defaults that make sense for JZ.
 
 ## Install
 
-This package can be installed from pypi:
+This package can be installed from pypi (using `--user` is required on JZ):
 ```
-pip install jz-hydra-submitit-launcher
+pip install --user jz-hydra-submitit-launcher
 ```
 
 You can also install it from source:
 ```
 git clone https://github.com/zaccharieramzi/jz-hydra-submitit-launcher.git
 cd jz-hydra-submitit-launcher
-pip install .
+pip install --user .
 ```
 
 ## Use
@@ -50,3 +50,4 @@ hydra-submitit-launch my_app.py dev hydra.launcher.setup=null hydra.launcher.par
 - Hydra: https://hydra.cc/docs/intro/
 - submitit-launcher: https://hydra.cc/docs/plugins/submitit_launcher/
 - submitit: https://github.com/facebookincubator/submitit
+- JZ docs: http://www.idris.fr/ or https://jean-zay-doc.readthedocs.io/en/latest/
