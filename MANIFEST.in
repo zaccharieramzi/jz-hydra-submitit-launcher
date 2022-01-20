@@ -1,3 +1,3 @@
 global-exclude *.pyc
 global-exclude __pycache__
-recursive-include jz_hydra_submitit_launcher/* *.yaml
+recursive-include hydra_plugins/jz_hydra_submitit_launcher/* *.yaml
