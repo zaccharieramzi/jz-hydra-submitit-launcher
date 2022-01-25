@@ -27,13 +27,12 @@ hydra-submitit-launch my_app.py dev
 ```
 
 ### Available configs
-6 different configs are available:
-- `dev`: with 2 hours, 1 gpu, and qos_gpu-dev.
-- `t3`: with 20 hours, 1 gpu, and qos_gpu-t3.
-- `t4`: with 100 hours, 1 gpu, and qos_gpu-t4.
-- `4gpus_dev`: with 2 hours, 4 gpus, and qos_gpu-dev.
-- `4gpus_t3`: with 20 hours, 4 gpus, and qos_gpu-t3.
-- `4gpus_t4`: with 100 hours, 4 gpus, and qos_gpu-t4.
+5 different configs are available:
+- `cpu10`: 10 cpus, partition "parietal"
+- `cpu40`: 40 cpus, partition "parietal"
+- `cpu100`: 100 cpus, partition "parietal"
+- `gpu1`: 1 gpu, 20 cpus, partition "gpu"
+- `gpu2`: 2 gpu, 20 cpus, partition "gpu"
 
 By default, all the configs select 32Gb GPUs, use a single node and use the gpu_p1 partition.
 
