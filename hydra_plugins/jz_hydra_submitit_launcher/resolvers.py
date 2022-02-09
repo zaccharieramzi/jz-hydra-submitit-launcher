@@ -2,6 +2,7 @@ from omegaconf import OmegaConf
 
 
 def time_to_qos(timeout_hour):
+    timeout_hour = int(timeout_hour)
     if timeout_hour > 20:
         qos = 't4'
     elif timeout_hour > 2:
