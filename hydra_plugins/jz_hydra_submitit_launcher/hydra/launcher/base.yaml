@@ -5,7 +5,7 @@ timeout_min: 60
 gpus_per_node: 1
 tasks_per_node: 1
 gres: "gpu:${hydra.launcher.gpus_per_node}"
-qos: ${qos_from_hours:hydra.launcher.hours}
+qos: ${qos_from_hours:${hydra.launcher.hours}}
 cpus_per_gpu: 10
 gpus_per_task: ${hydra.launcher.gpus_per_node}
 additional_parameters:
