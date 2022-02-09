@@ -12,4 +12,4 @@ def time_to_qos(timeout_hour):
     qos = f'qos_gpu-{qos}'
     return qos
 
-OmegaConf.register_new_resolver("qos_from_hours", time_to_qos)
+OmegaConf.register_new_resolver("qos_from_hours", time_to_qos, replace=True)
