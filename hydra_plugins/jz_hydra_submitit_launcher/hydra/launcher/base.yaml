@@ -7,7 +7,7 @@ tasks_per_node: 1
 gres: "gpu:${hydra.launcher.gpus_per_node}"
 qos: ${qos_from_hours:${hours}}
 cpus_per_gpu: 10
-cpus_per_task: ${cpu_from_gpu:${gpus_per_node},${cpus_per_gpu}}
+cpus_per_task: ${cpu_from_gpu:${hydra.launcher.gpus_per_node},${hydra.launcher.cpus_per_gpu}}
 gpus_per_task: ${hydra.launcher.gpus_per_node}
 additional_parameters:
   account: ${oc.env:IDRPROJ}@gpu
