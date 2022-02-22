@@ -45,6 +45,11 @@ For example, if you want to use the gpu_p2 partition, you would need to do:
 hydra-submitit-launch my_app.py dev hydra.launcher.setup=null hydra.launcher.partition=gpu_p2
 ```
 
+In order to change the timeout on the SLURM job to for example 10 hours, you would need to do:
+```
+hydra-submitit-launch my_app.py base +hydra.launcher.hours=10
+```
+This will automatically select the right qos for you.
 
 ## References
 - Hydra: https://hydra.cc/docs/intro/
