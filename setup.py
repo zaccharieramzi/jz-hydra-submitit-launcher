@@ -20,7 +20,7 @@ setuptools.setup(
     homepage=jz_hydra_submitit_launcher.__homepage__,
     url="https://github.com/zaccharieramzi/jz-hydra-submitit-launcher",
     license=jz_hydra_submitit_launcher.__license__,
-    packages=setuptools.find_packages(include=["hydra_plugins.*"]),
+    packages=setuptools.find_namespace_packages(include=["hydra_plugins.*"]),
     zip_safe=False,
     classifiers=[
         "Programming Language :: Python :: 3",
