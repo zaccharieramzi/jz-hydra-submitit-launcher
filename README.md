@@ -42,7 +42,7 @@ The parameters you can override are defined in the `hydra-submitit-launcher` plu
 
 For example, if you want to use the gpu_p2 partition, you would need to do:
 ```
-hydra-submitit-launch my_app.py dev hydra.launcher.setup=null hydra.launcher.partition=gpu_p2
+hydra-submitit-launch my_app.py dev hydra.launcher.setup=null hydra.launcher.partition=gpu_p2 hydra.launcher.cpus_per_task=3
 ```
 
 In order to change the timeout on the SLURM job to for example 10 hours, you would need to do:
