@@ -19,6 +19,15 @@ cd jz-hydra-submitit-launcher
 pip install --user .
 ```
 
+The main command is then installed in your local binaries.
+You need to add them to your path in order for the command to be found (and avoid the error `-bash: hydra-submitit-launch: command not found`):
+
+```
+echo "export PATH=$PATH:$HOME/.local/bin" >> $HOME/.bashrc
+```
+
+Don't forget to `source $HOME/.bashrc` before using the command.
+
 ## Use
 
 The primary use is with the `hydra-submitit-launch` command with your script name and the config type:
