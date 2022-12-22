@@ -56,9 +56,9 @@ hydra-submitit-launch my_app.py dev hydra.launcher.setup=null hydra.launcher.par
 
 In order to change the timeout on the SLURM job to for example 10 hours, you would need to do:
 ```
-hydra-submitit-launch my_app.py base +hydra.launcher.hours=10
+hydra-submitit-launch my_app.py base +hours=10
 ```
-This will automatically select the right qos for you.
+This will automatically select the right qos for you (and if you want to force a certain qos, you can always add `+hydra.launcher.qos=<your-qos>`).
 
 ## References
 - Hydra: https://hydra.cc/docs/intro/
