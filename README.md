@@ -60,6 +60,10 @@ hydra-submitit-launch my_app.py base +hours=10
 ```
 This will automatically select the right qos for you (and if you want to force a certain qos, you can always add `hydra.launcher.qos=<your-qos>`).
 
+### Logs
+Your SLURM logs are stored in the following path: `launch-dir/multirun/day-of-launch/time-of-launch/.submitit/job_array_task_id/`
+This is the default from `hydra` and `submitit` and this can be changed using both the `submitit` plugin parameters (see [here](https://hydra.cc/docs/plugins/submitit_launcher/#usage)) and the `hydra` job configurations (see [here](https://hydra.cc/docs/configure_hydra/job/)). 
+
 ## References
 - Hydra: https://hydra.cc/docs/intro/
 - submitit-launcher: https://hydra.cc/docs/plugins/submitit_launcher/
