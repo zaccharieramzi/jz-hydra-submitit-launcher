@@ -1,9 +1,10 @@
 #!/bin/bash
-usage="$(basename "$0") [--help] python_script launch_config @hydra_args
+usage="$(basename "$0") [--help] python_script launch_config <--config-name=other_config> @hydra_args
 where:
     --help  show this help text
     python_script: the hydra python script to run
     launch_config: the SLURM config to use for this run
+    --config-name: the config name to use for this run
     hydra_args: arguments to pass to the hydra python script, where you can specify sweeps, but also override some launch configs"
 
 if [ "$1" == "--help" ]; then
@@ -11,4 +12,8 @@ if [ "$1" == "--help" ]; then
   exit 0
 fi
 
-python $1 -m hydra/launcher=$2 "${@:3}"
+if [ "$3" == "--config-name="* ]; then
+  python $1 $3 -m hydra/launcher=$2 "${@:4}"
+else
+  python $1 -m hydra/launcher=$2 "${@:3}"
+fi
