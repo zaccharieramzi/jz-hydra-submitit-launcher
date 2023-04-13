@@ -11,4 +11,4 @@ if [ "$1" == "--help" ]; then
   exit 0
 fi
 
-python $1 -m hydra/launcher=$2 "${@:3}"
+python $1 -m "${@:3}" hydra/launcher=$2
