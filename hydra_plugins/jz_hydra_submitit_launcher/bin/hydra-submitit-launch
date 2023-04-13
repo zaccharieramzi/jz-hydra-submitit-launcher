@@ -12,7 +12,7 @@ if [ "$1" == "--help" ]; then
   exit 0
 fi
 
-if [ "$3" == "--config-name="* ]; then
+if [[ "$3" == "--config-name="* ]]; then
   python $1 $3 -m hydra/launcher=$2 "${@:4}"
 else
   python $1 -m hydra/launcher=$2 "${@:3}"
